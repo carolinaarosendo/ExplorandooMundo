@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre em Contato</title>
+    <link rel="StyleSheet" type="text/css" href="../style.css"/>
+    <link rel="icon" type="image/png" href="../Imagens/favicon-16x16.png"/>
+</head>
+<nav>
+    <ul class="menu">
+        <li><a href="../index.html">Página Inicial</a></li>
+        <li><a href="../Formularios/formulario.html">Entre em Contato</a></li>
+
+        <li>
+            <a href="#">Sobre Nossa Empresa</a>
+            <ul>
+                <li><a href="#">Informações</a></li>
+                <li><a href="#">Empresa</a></li>
+                <li><a href="#">Gestão</a></li>
+            </ul>
+        </li>
+
+        <li> <p><a href="#">Links</a></li>
+        <li> <p><a href="#">Sugestões</a></li>
+    </ul>
+</nav>
+<br />
+<br />
+<br />
+<body>
+    <form>
+        <fieldset>
+            <legend><h3 id="h3formulario">Faça seu Cadastro</h3></legend>
+    <!--Formulário-->
+    <h3 id="h3formulario">Preencha com suas informações pessoais</h3>
+    <form action=".sql" method="post">
+        <p>Nome: <input type="text" name="Nome" placeholder="Escreva seu Nome"/></p>   
+        <p>CPF: <input type="number" name="cpf" placeholder="Digite seu CPF"/></p>      
+        <p>Telefone: <input type="tel" name="Telefone" placeholder="(00) 00000-0000" maxlength="11"/></p>        
+        <p>Data de Nascimento: <input type="date" name="Data de Nascimento" placeholder="Data de Nascimento"/></p>        
+        <p>E-mail: <input type="email" name="Email" placeholder="Digite seu E-mail"/></p>  
+        <p>Crie uma senha: <input type="password" name="senha" placeholder="Crie sua senha"/></p>   
+        <p>Confirme sua senha: <input type="password" name="confirmarsenha" placeholder="Confirme sua senha"/></p>  
+       <hr />
+       <h4>Endereço</h4>
+       <p>Cidade: <input type="text" name="Cidade" placeholder="Digite sua Cidade"/></p>
+       <p>Endereço: <input type="text" name="Endereco" placeholder="Escreva seu Endereço"/></p>
+       <p>CEP: <input type="text" name="CEP" placeholder="Digite seu CEP"/></p>
+       <p>Bairro: <input type="text" name="Bairro" placeholder="Escreva seu Bairro"/></p>
+       <p>Rua: <input type="text" name="Rua"/></p>
+       <p>Número: <input type="text" name="Numero"/></p>
+        <p><h4>Estado</h4>
+            <select>
+                <option value=""></option>
+                <option value="Distrito Federal">Distrito Federal</option>
+                <option value="Goiânia">Goiânia</option>
+                <option value="Fortaleza">Fortaleza</option>
+                <option value="Gramado">Gramado</option>
+                <option value="Bahia">Bahia</option>
+                <option value="Minas Gerais">Minas Gerais</option>
+                <option value="Bahia">Bahia</option>
+                <option value="Santa Catarina">Santa Catarina</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Amazonas">Amazonas</option>
+                <option value="Pernambuco">Pernambuco</option>
+                <option value="Pará">Pará</option>
+            </select> 
+        </p>
+        <hr />
+        <p> <h4>Estado Civil:</h4>
+            <input type="radio" name="Solteiro" value="Solteiro"/> Solteiro
+            <br />
+            <input type="radio" name="Casado" value="Casado"/> Casado
+            <br />
+            <input type="radio" name="Viuvo" value="Viuvo"/> Viúvo
+            <br />
+            <input type="radio" name="Divorciado" value="Divorciado"/> Divorciado
+        </p> 
+        <p> <h4>Sexo:</h4>
+            <input type="radio" name="Sexo" value="Masculino"/> Masculino
+            <br />
+            <input type="radio" name="Sexo" value="Feminino"/> Feminino
+            <br />
+            <input type="radio" name="Sexo" value="Prefiro não responder"/> Prefiro não responder
+        </p>  
+        <hr />
+        <p> <h4>Nacionalidade:</h4>
+            <input type="radio" name="Brasileiro" value="Brasileiro"/> Brasileiro
+            <br />
+            <input type="radio" name="Outro" value="Outro"/> Outro
+        </p> 
+        <h4>Outro:</h4>        
+        <textarea rows="3" cols="30"></textarea>  
+        <br />
+        <br />
+        <hr />
+        
+        <h4>Dúvidas:</h4>        
+        <textarea rows="3" cols="30"></textarea>  
+        <br />
+        <br />
+           <input type="reset" name="reset"/>
+           <input type="submit" name="submit"/>
+           <p>
+            <input type="checkbox" name="termos"/>
+            Você está de acordo com os nossos termos de uso?
+           </p>
+        </fieldset>
+    </form>
+    <br />
+    <h3 id="h3destinosmaisprocurados">Destinos mais Procurados para Uma Pessoa</h3>
+    <table class="variation-1" border="2">
+        <tr>
+            <th>Destino</th>
+            <th>Preço</th>
+            <th>Duração</th>
+        </tr>
+        <tr>
+            <td>Paris</td>
+            <td>R$5000</td>
+            <td>7 dias</td>
+        </tr>
+        <tr>
+            <td>Roma</td>
+            <td>R$4500</td>
+            <td>6 dias</td>
+        </tr>
+    </table>
+    <br />
+    <table class="variation-2" class="variation-1" border="2">
+        <tr>
+            <th>Destino</th>
+            <th>Preço</th>
+            <th>Duração</th>
+        </tr>
+        <tr>
+            <td>Londres</td>
+            <td>R$4800</td>
+            <td>6 dias</td>
+        </tr>
+        <tr>
+            <td>Barcelona</td>
+            <td>R$4300</td>
+            <td>5 dias</td>
+        </tr>
+    </table>
+    <br />
+    <table class="variation-3" class="variation-1" border="2">
+        <tr>
+            <th>Destino</th>
+            <th>Preço</th>
+            <th>Duração</th>
+        </tr>
+        <tr>
+            <td>Nova York</td>
+            <td>R$7000</td>
+            <td>10 dias</td>
+        </tr>
+        <tr>
+            <td>Miami</td>
+            <td>R$6000</td>
+            <td>8 dias</td>
+        </tr>
+    </table>
+    <br />
+    <table class="variation-1" class="variation-1" border="2">
+        <tr>
+            <th>Destino</th>
+            <th>Preço</th>
+            <th>Duração</th>
+        </tr>
+        <tr>
+            <td>Tóquio</td>
+            <td>R$8000</td>
+            <td>12 dias</td>
+        </tr>
+        <tr>
+            <td>Seul</td>
+            <td>R$7500</td>
+            <td>11 dias</td>
+        </tr>
+    </table>
+    <br />
+    <table class="variation-2" class="variation-1" border="2">
+        <tr>
+            <th>Destino</th>
+            <th>Preço</th>
+            <th>Duração</th>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td>R$2500</td>
+            <td>5 dias</td>
+        </tr>
+        <tr>
+            <td>Fernando de Noronha</td>
+            <td>R$4000</td>
+            <td>7 dias</td>
+        </tr>
+    </table>
+</body>
+<br />
+<br />
+<footer class="rodape" id="contato">
+    <div class="rodape-div">
+        <!--Coluna 01-->
+        <div class="rodape-div-1">
+        <div class="rodape-div-1-coluna">
+          <span>Explorando o Mundo</span>
+          <p><a href="#">Cadastre-se</p>  
+            <p><a href="#">Login</p>  
+        </div>
+        </div>
+        <!--Coluna 02-->
+            <div class="rodape-div-2">
+            <div class="rodape-div-2-coluna">
+              <span>Ajuda</span>
+              <p><a href="#">Dúvidas</p> 
+              <p><a href="#">Contatos</p> 
+            </div>
+            </div>
+            <!--Coluna 03-->
+            <div class="rodape-div-3">
+            <div class="rodape-div-3-coluna">
+              <span>Sobre</span>
+              <p><a href="#">Propósito</p>  
+                <p><a href="#">Sustentabilidade</p>  
+                <p><a href="#">Valores</p>  
+            </div>
+            </div>
+            <!--Coluna 04-->
+            <div class="rodape-div-4">
+            <div class="rodape-div-4-coluna">
+              <span>Redes Sociais</span>
+              <p><a href="#">Instagram</p>  
+                <p><a href="#">Youtube</p>  
+                <p><a href="#">Twitter</p>  
+            </div>
+            </div>
+    </div>
+    <p class="rodape-direitos">Copyright&copy; 2025</p>
+</footer>
+</html>
